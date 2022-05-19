@@ -1,0 +1,11 @@
+{
+  "name": "onsac",
+  "version": "1.0.0",
+  "description": "outil de suivi des actions de controle",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,35 @@
+$colour-primary: #373dad;
+$colour-secondary: lightslategrey;
+$colour-accent: #D6FFF5;
+$colour-white: #fff;
+$colour-invalid: #DB464B;
+$colour-light:#f2f4ff;
+$colour-text: #1c1c1c;
+
+$header-height: 50px;
+
+$nav-width: 200px;
+
+$circle-size: 15rem;
+$circle-width: 35px;
+
+$card-top-radius: 10px 10px 0 0;
+$card-bottom-radius: 0 0 10px 10px;
+$card-shadow: 0 5px 5px darken($colour-white, 20%);
+
+$status-palette:(
+    ok: #28d48c,
+    current: #f2d77c,
+    delayed: palevioletred,
+    coming: #4580ed
+);
+
+$percent-widths:(
+    5: 5%,
+    10: 10%,
+    15: 15%,
+    20: 20%,
+    25: 25%,
+    30: 30%,
+    40: 40%
+)

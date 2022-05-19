@@ -1,0 +1,45 @@
+.process-chart {
+    padding: 10px;
+    background: $colour-white;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px darken($color: $colour-light, $amount: 4%);
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: $colour-secondary;
+    }
+
+    &-bar {
+        display: flex;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    &__bar-title {
+        width: 80px;
+        min-width: 80px;
+        font-size: 0.55em;
+        color: $colour-secondary;
+        font-weight: 900;
+        line-height: 8px;
+        text-align: right;
+        padding-right: 10px;
+        font-family: "Cerebri Sans",sans-serif;
+    }
+
+    &__bar-content {
+        position: relative;
+        height: 8px;
+    }
+    &__bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 8px;
+        background: map-get($map: $status-palette, $key: coming);
+        border-radius: 4px;
+
+        @include bkg-color-status($status-palette);
+    }
+}

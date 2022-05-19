@@ -1,0 +1,9 @@
+.message-card {
+    height: 220px;
+    background-color: $colour-white;
+    flex: 30%;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px darken($color: $colour-light, $amount: 4%);
+}

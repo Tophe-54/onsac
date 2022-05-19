@@ -1,0 +1,25 @@
+.suivi {
+
+    &__heading-h1 {
+        color: $colour-primary;
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+
+    &__heading-h2 {
+        color: $colour-primary;
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+
+    .graph-doughnut {
+        margin-bottom: 15px;
+    }
+
+    .table {
+
+        td:nth-child(4) {
+            text-align: left;
+        }
+    }
+}

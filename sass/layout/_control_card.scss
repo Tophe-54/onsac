@@ -1,0 +1,81 @@
+.control-card {
+    position: relative;
+    z-index: 0;
+    padding: 5px 10px;
+    background-color: $colour-white;
+    border-radius: 7px/10px;
+    line-height: normal;
+    border-left-width: 7px;
+    border-left-color: $colour-primary;
+    border-left-style: solid;
+    box-shadow: 0 5px 5px darken($color: $colour-light, $amount: 4%);
+
+    &__control-name {
+        padding: 0;
+        margin-right: 150px;
+        margin-bottom: 2px;
+        color: $colour-primary;
+        font-size: 1.2em;
+    }
+
+    &__process-name {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 0.75em;
+        color: $colour-text;
+        text-decoration: none;
+    }
+
+    &__status-bar {
+        margin-bottom: 5px;
+    }
+
+    &__actions {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin: 0;
+        text-align: center;
+        width: auto;
+    }
+
+    &__action-link {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid $colour-primary;
+        border-radius: 50%;
+        padding: 5px;
+        color: $colour-primary;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0;
+
+        &:hover {
+            color: $colour-white;
+            background-color: $colour-primary;
+        }
+
+        &--disabled {
+            pointer-events: none;
+            color: $colour-white;
+            border-color: darken($color: white, $amount: 8%);
+            background-color: darken($color: white, $amount: 7%);
+        }
+        
+        svg {
+            width: 14px;
+        }
+    }
+        
+    &__notif {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 2px solid $colour-white;
+        background-color: red;
+        position: absolute;
+        right: 0;
+        top: -4px;
+    }
+}

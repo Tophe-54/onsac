@@ -1,0 +1,13 @@
+.graph-doughnut {
+    width: 200px;
+	height: auto;
+	padding: 10px;
+	border: 1px solid rgb(244, 244, 244);
+	border-radius: 5px;
+	background-color: #fff;
+
+    &__heading {
+        font-size: 1em;
+        color: $colour-primary;
+    }
+}

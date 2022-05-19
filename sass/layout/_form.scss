@@ -1,0 +1,43 @@
+.form {
+    display: block;
+    font-size: 1em;
+
+    &__label {
+        display: block;
+        color: $colour-white;
+    }
+
+    &__select {
+        width: 100%;
+        border: 1px solid darken($color: $colour-light, $amount: 5);
+        background-color: $colour-white;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    &__input {
+        width: 100%;
+        border: 1px solid darken($color: $colour-light, $amount: 5);
+        background-color: $colour-white;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        
+        &--search {
+            padding-left: 25px;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 150px;
+        resize: none;
+        overflow: scroll;
+        border: 1px solid darken($color: $colour-light, $amount: 5);
+        background-color: $colour-white;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,77 @@
+.nav {
+	position: fixed;
+	width: $nav-width;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: $colour-primary;
+	//border-left: 1px solid rgb(244, 244, 244);
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        text-align: center;
+
+        a {
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 400;
+            color: $colour-white;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    }
+
+    .form {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+
+        &__select {
+            width: auto;
+        }
+    }
+
+    &__link{
+        list-style-type: none;
+        margin-bottom: 10px;
+        padding: 0 10px;
+
+        a {
+            text-decoration: none;
+            display: block;
+            margin: 0;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            line-height: 16px;
+            font-family: "Cerebri Sans",sans-serif;
+            color: $colour-white;
+            background-color: darken($color: $colour-primary, $amount: 5);
+            transition: background-color 350ms;
+
+            svg {
+                width: 14px;
+                height: 14px;
+                margin-right: 10px;
+            }
+
+            &:hover {
+                color: $colour-primary;
+                background-color: lighten($color: $colour-primary, $amount: 55);
+            }
+        }
+
+        &--active {
+
+            a {
+                pointer-events: none;
+                background-color: darken($color: $colour-primary, $amount: 10%);
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@mixin bkg-color-status($status-palette) {
+    @each $status, $palette in $status-palette {
+        &--#{$status} {
+            background: $palette;
+        }
+    }
+}
+
+@mixin font-color-status($status-palette) {
+    @each $status, $palette in $status-palette {
+        &--#{$status} {
+            color: $palette;
+        }
+    }
+}
+
+@mixin bkg-and-font-color-status($status-palette) {
+    @each $status, $palette in $status-palette {
+        &--#{$status} {
+            background: $palette;
+            color: $palette;
+        }
+    }
+}
+
+@mixin percent-widths($widths) {
+    @each $width, $value in $widths {
+        &-#{$width} {
+            width: $value;
+        }
+    }
+}

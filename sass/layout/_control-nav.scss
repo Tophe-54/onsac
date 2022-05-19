@@ -1,0 +1,42 @@
+.control-nav {
+
+    ul {
+        text-align: center;
+    }
+
+    &__link {
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+            display: inline-block;
+            padding: 10px;
+            background-color: $colour-white;
+            color: $colour-primary;
+            border: 2px solid $colour-primary;
+            border-radius: 50%;
+            line-height: 1em;
+            transition: background 150ms;
+
+            svg {
+                width: 25px;
+            }
+
+            &:hover {
+                background-color: $colour-primary;
+                color: $colour-white;
+            }
+        }
+
+        &--disabled {
+
+            a {
+                pointer-events: none;
+                color: $colour-white;
+                border-color: darken($color: $colour-light, $amount: 5%);
+                background-color: darken($color: $colour-light, $amount: 5%);
+            }
+        }
+    }
+}

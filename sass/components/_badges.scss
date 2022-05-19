@@ -1,0 +1,25 @@
+.badge {
+    border-radius: 5px;
+    padding: 2px 5px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 0.9em;
+    width: auto;
+    background: $colour-secondary;
+    color: $colour-white;
+
+    &--primary {
+        background: $colour-primary;
+        color: $colour-white;
+    }
+
+    @include bkg-color-status($status-palette);
+
+    &--small {
+        font-size: 0.7em;
+    }
+
+    &--medium {
+        font-size: 0.9em;
+    }
+}

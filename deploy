@@ -1,0 +1,3 @@
+#!/bin/sh
+rsync -av ./ u102458139@access846070038.webspace-data.io:~/onsac/
+

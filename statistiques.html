@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fiche contrôle</title>
+	<link rel="stylesheet" type="text/css" href="./public/css/style.css">
+</head>
+<body>
+    <header class="header">
+		<div class="header__container">
+			<div class="header__form">
+				<form action="" class="form header__form-search">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+						<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+					</svg>
+					<input type="text" class="form__input form__input--search" name="search" id="">
+				</form>
+			</div>
+			<div class="header__user">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+					<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+				</svg>
+				Jean-Christophe Villa
+			</div>
+		</div>
+	</header>
+
+	<nav class="nav">
+		<h1 class="nav__title"><a href="index.html">ONSAC</a></h1>
+		<ul class="nav__links">
+			<li class="nav__link">
+				<a href="index.html">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-columns-gap" viewBox="0 0 16 16">
+						<path d="M6 1v3H1V1h5zM1 0a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1zm14 12v3h-5v-3h5zm-5-1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5zM6 8v7H1V8h5zM1 7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H1zm14-6v7h-5V1h5zm-5-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1h-5z"/>
+					</svg>Contrôles
+				</a>
+			</li>
+			<li class="nav__link">
+				<a href="dashboard.html">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+						<path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+					</svg>Tableau de bord
+				</a>
+			</li>
+			<li class="nav__link nav__link--active">
+				<a href="statistiques.html">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-graph-down" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M0 0h1v15h15v1H0V0Zm14.817 11.887a.5.5 0 0 0 .07-.704l-4.5-5.5a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61 4.15 5.073a.5.5 0 0 0 .704.07Z"/>
+					</svg>Statistiques
+				</a>
+			</li>
+		</ul>
+		
+		<form class="form" action="">
+			<label for="caisse" class="form__label">Caisse</label>
+			<select name="caisse" id="form_caisse" class="form__select">
+				<option value="TOUS">Toutes</option>
+				<option value="542" selected>542</option>
+				<option value="571">571</option>
+				<option value="673">673</option>
+				<option value="682">682</option>
+			</select>
+
+			<label for="process" class="form__label">Processus</label>
+			<select name="process" id="form_process" class="form__select">
+				<option value="TOUS">Tous</option>
+				<option value="GBD">GDB</option>
+				<option value="PN">PN</option>
+				<option value="PE_AS">PE AS</option>
+				<option value="PE_AT">PE AT</option>
+				<option value="RENTES">RENTES</option>
+				<option value="PI">PI</option>
+			</select>
+
+			<label for="origine" class="form__label">Origine</label>
+			<select name="origine" id="form_origine" class="form__select">
+				<option value="TOUS">Tous</option>
+				<option value="PCSAC">PCSAC</option>
+				<option value="LR">LR</option>
+				<option value="INTERNE">INTERNE</option>
+			</select>
+		</form>
+	</nav>
+
+	<div class="container">
+		<main class="statistiques">
+            <h1>Statistiques</h1>
+			
+			<table class="table">
+				<tr>
+					<th>Processus</th>
+					<th>Intitulé du contrôle</th>
+					<th>Nb de contrôles total</th>
+					<th>Nb de contrôles faits</th>
+					<th>Nb de contrôles à faire</th>
+					<th>Nb de contrôles en retard</th>
+                    <th>Avancement</th>
+				</tr>
+				<tr>
+					<td>PE AS</td>
+					<td>IJ AS PM INTRA</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">3</span></td>
+					<td><span class="badge badge--current">2</span></td>
+					<td>-</td>
+                    <td>12%</td>
+				</tr>
+                <tr>
+					<td>PE AS</td>
+					<td>IJ AS PM INTER</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">2</span></td>
+					<td><span class="badge badge--current">3</span></td>
+					<td><span class="badge badge--delayed">1</span></td>
+                    <td>9%</td>
+				</tr>
+                <tr>
+					<td>PE AS</td>
+					<td>IJ SUP 60J</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">3</span></td>
+					<td><span class="badge badge--current">3</span></td>
+					<td>-</td>
+                    <td>15%</td>
+				</tr>
+                <tr>
+					<td>GDB</td>
+					<td>GB RIB</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">4</span></td>
+					<td>-</td>
+					<td>-</td>
+                    <td>22%</td>
+				</tr>
+                <tr>
+					<td>GDB</td>
+					<td>GB DROITS</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">2</span></td>
+					<td><span class="badge badge--current">3</span></td>
+					<td><span class="badge badge--delayed">1</span></td>
+                    <td>9%</td>
+				</tr>
+                <tr>
+					<td>PN</td>
+					<td>PN PM MEDECINS</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">2</span></td>
+					<td><span class="badge badge--current">3</span></td>
+					<td><span class="badge badge--delayed">1</span></td>
+                    <td>9%</td>
+				</tr>
+                <tr>
+					<td>PN</td>
+					<td>PN PM DENTISTES</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">2</span></td>
+					<td><span class="badge badge--current">3</span></td>
+					<td><span class="badge badge--delayed">1</span></td>
+                    <td>9%</td>
+				</tr>
+                <tr>
+					<td>PN</td>
+					<td>PN TELECONSULTATIONS</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">2</span></td>
+					<td><span class="badge badge--current">3</span></td>
+					<td><span class="badge badge--delayed">1</span></td>
+                    <td>9%</td>
+				</tr>
+                <tr>
+					<td>COT</td>
+					<td>COT DESTIN GEFE</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">2</span></td>
+					<td><span class="badge badge--current">3</span></td>
+					<td><span class="badge badge--delayed">1</span></td>
+                    <td>9%</td>
+				</tr>
+                <tr>
+					<td>COT</td>
+					<td>COT DROITS</td>
+					<td><span class="badge badge--coming">12</span></td>
+					<td><span class="badge badge--ok">2</span></td>
+					<td><span class="badge badge--current">3</span></td>
+					<td><span class="badge badge--delayed">1</span></td>
+                    <td>9%</td>
+				</tr>
+			</table>
+        </main>
+	</div><!-- end container-->
+</body>
+</html>

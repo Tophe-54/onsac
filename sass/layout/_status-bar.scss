@@ -1,0 +1,15 @@
+.status-bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	&__status {
+		height: 4px;
+		flex: 1;
+		margin: 0 1px;
+		border-radius: 2px;
+
+		@include bkg-color-status($status-palette);
+	}
+    
+}

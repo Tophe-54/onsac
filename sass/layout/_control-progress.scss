@@ -1,0 +1,53 @@
+.control-progress {
+    background: $colour-white;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px darken($color: $colour-light, $amount: 4%);
+
+    
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: $colour-secondary;
+    }
+
+    &__bar-content {
+        position: relative;
+        height: 16px;
+        margin-right: 60px;
+    }
+    &__bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 100%;
+        border-radius: 8px;
+        background-color: $colour-light;
+
+        @include bkg-color-status($status-palette);
+    }
+
+    &__end-bar {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid $colour-white;
+        background-color: map-get($map: $status-palette, $key: coming);
+        box-shadow: 0 0 6px darken($color: map-get($map: $status-palette, $key: coming), $amount: 15%);
+    }
+
+    &__percent {
+        position: absolute;
+        line-height: 16px;
+        top: 0px;
+        right: -60px;
+        color: $colour-secondary;
+        font-size: 0.95em;
+        font-weight: bold;
+    }
+}

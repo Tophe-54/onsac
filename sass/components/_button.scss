@@ -1,0 +1,8 @@
+.btn {
+    background-color: lighten($color: $colour-primary, $amount: 10);
+    border: 1px solid $colour-primary;
+    color: $colour-white;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,35 @@
+.dashboard {
+
+    > * {
+        margin-bottom: 20px;
+    }
+
+    .controls-count {
+        width: auto;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: $colour-white;
+        border-radius: 15px;
+        box-shadow: 0 5px 5px darken($color: $colour-light, $amount: 4%);
+
+        &__title {
+            text-align: center;
+            font-size: 1.2em;
+            @include font-color-status($status-palette)
+        }
+
+        &__circle {
+            margin: 5px;
+        }
+    }
+
+    .control-progress {
+        flex: 1;
+    }
+
+    .process-chart {
+        flex: 100%;
+    }
+}
